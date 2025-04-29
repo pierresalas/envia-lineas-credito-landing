@@ -1,58 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Envia.com - Solicita tu Crédito</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solicita tu línea de crédito | Envia.com</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <header>
-    <img src="assets/img/envia-logo.png" alt="Envia.com logo" class="logo">
+  <!-- HEADER CON ESTILOS CONSERVADOS -->
+  <header class="main-header">
+    <div class="logo-area">
+      <img src="assets/logo-envia.svg" alt="Envia logo" class="logo">
+    </div>
+    <nav class="nav-menu">
+      <a href="#">Producto</a>
+      <a href="#">Plataforma</a>
+      <a href="#">Integraciones</a>
+      <a href="#">Recursos</a>
+      <a href="#" class="cotizar-link">Cotizar</a>
+      <button class="rastreo-btn">Rastrear</button>
+      <input type="text" class="busqueda" placeholder="🔍">
+      <a href="#" class="dashboard-btn" target="_blank">DASHBOARD ↗</a>
+      <img src="https://flagcdn.com/w40/mx.png" alt="mexico" class="flag-icon">
+    </nav>
   </header>
 
-  <section class="hero">
-    <h1>¡Solicita tu línea de crédito en minutos!</h1>
-    <p>Impulsa tu crecimiento con Envia.com</p>
-    <a href="#solicitud" class="cta-btn">Solicitar ahora</a>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>¿Necesitas crédito para seguir generando guías?</h1>
+      <p>Solicita tu línea de crédito personalizada basada en tu consumo mensual de guías. Sin complicaciones, sin esperas.</p>
+      <a href="#solicitar" class="cta-button">Solicita tu crédito</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/envia-content.webp" alt="mapa logístico"/>
+    </div>
   </section>
 
-  <section class="info">
-    <h2>¿Qué es la línea de crédito Envia?</h2>
-    <p>Obtén una línea de crédito personalizada según tu consumo mensual de guías.</p>
+  <!-- MÉTRICAS / BENEFICIOS -->
+  <section class="metrics-section">
+    <div class="metric-box">
+      <img src="assets/head 1.svg" alt="empresas">
+      <h3>20,000+ Clientes</h3>
+      <p>Ya confían en nosotros</p>
+    </div>
+    <div class="metric-box">
+      <img src="assets/head 2.svg" alt="envíos">
+      <h3>1M+ Guías</h3>
+      <p>Gestionadas mensualmente</p>
+    </div>
+    <div class="metric-box">
+      <img src="assets/head 3.svg" alt="transportadoras">
+      <h3>100+ Transportadoras</h3>
+      <p>Integradas a Envia.com</p>
+    </div>
   </section>
 
-  <section class="benefits">
-    <h2>Beneficios</h2>
-    <ul>
-      <li>✅ Disponibilidad inmediata</li>
-      <li>✅ Crédito personalizado</li>
-      <li>✅ Sin trámites complicados</li>
-    </ul>
-  </section>
-
-  <section id="solicitud" class="form-section">
+  <!-- FORMULARIO -->
+  <section id="solicitar" class="form-section">
     <h2>Solicita tu línea de crédito</h2>
+    <p>Llena tus datos y te contactaremos en breve.</p>
     <form action="https://formspree.io/f/TU-ID" method="POST">
-      <input type="text" name="name" placeholder="Nombre o Empresa" required>
+      <input type="text" name="nombre" placeholder="Nombre o empresa" required>
       <input type="email" name="email" placeholder="Correo electrónico" required>
-      <input type="tel" name="phone" placeholder="Teléfono" required>
-      <select name="consumo" required>
-        <option value="">Promedio mensual de guías</option>
-        <option value="0-50">0-50 guías</option>
-        <option value="51-200">51-200 guías</option>
-        <option value="201-500">201-500 guías</option>
-        <option value="500+">Más de 500 guías</option>
+      <input type="tel" name="telefono" placeholder="Teléfono" required>
+      <select name="guías" required>
+        <option value="">¿Cuántas guías usas al mes?</option>
+        <option value="0-50">0 - 50</option>
+        <option value="51-200">51 - 200</option>
+        <option value="201-500">201 - 500</option>
+        <option value="500+">Más de 500</option>
       </select>
-      <textarea name="comments" placeholder="Comentarios adicionales (opcional)"></textarea>
       <button type="submit">Enviar solicitud</button>
     </form>
   </section>
-
-  <footer>
-    <p>© 2025 Envia.com. Todos los derechos reservados.</p>
-  </footer>
 
 </body>
 </html>

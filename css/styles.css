@@ -1,0 +1,162 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* HEADER CONSERVADO */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cotizar-link {
+  color: #1d72f3;
+}
+
+.rastreo-btn {
+  padding: 5px 10px;
+  background-color: #f0f3f7;
+  border: none;
+  border-radius: 6px;
+}
+
+.busqueda {
+  width: 32px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.dashboard-btn {
+  padding: 8px 14px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.flag-icon {
+  height: 24px;
+}
+
+/* HERO */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #f7f9fc;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #518cff;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 40%;
+  height: auto;
+}
+
+/* MÉTRICAS */
+.metrics-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.metric-box {
+  text-align: center;
+  max-width: 200px;
+}
+
+.metric-box img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.metric-box h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* FORMULARIO */
+.form-section {
+  padding: 60px 20px;
+  background-color: #f7f9fc;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #518cff;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
